@@ -19,6 +19,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+using System;
+
 namespace UnitsNet
 {
     // Windows Runtime Component has constraints on public types: https://msdn.microsoft.com/en-us/library/br230301.aspx#Declaring types in Windows Runtime Components
@@ -27,6 +29,9 @@ namespace UnitsNet
 #if WINDOWS_UWP
     public sealed partial class Acceleration
 #else
+    #if NET40
+        [Serializable]
+    #endif
     public partial struct Acceleration
 #endif
     {

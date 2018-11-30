@@ -30,6 +30,9 @@ namespace UnitsNet
 #if WINDOWS_UWP
     public sealed partial class Duration
 #else
+    #if NET40
+        [Serializable]
+    #endif
     public partial struct Duration
 #endif
     {

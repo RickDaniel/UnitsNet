@@ -33,6 +33,9 @@ namespace UnitsNet
 #if WINDOWS_UWP
     public sealed partial class Speed
 #else
+    #if NET40
+        [Serializable]
+    #endif
     public partial struct Speed
 #endif
     {

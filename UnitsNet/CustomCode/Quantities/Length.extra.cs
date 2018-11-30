@@ -38,6 +38,9 @@ namespace UnitsNet
 #if WINDOWS_UWP
     public sealed partial class Length
 #else
+    #if NET40
+        [Serializable]
+    #endif
     public partial struct Length
 #endif
     {
