@@ -37,6 +37,13 @@ namespace UnitsNet
     {
         // Windows Runtime Component does not allow operator overloads: https://msdn.microsoft.com/en-us/library/br230301.aspx
 #if !WINDOWS_UWP
+
+        // Added by RND
+        public static Speed operator *(Duration duration, Acceleration accel)
+        {
+            return Speed.FromMetersPerSecond(duration.Seconds * accel.MetersPerSecondSquared);
+        }
+
         public static SpecificWeight operator *(Acceleration acceleration, Density density)
         {
             return new SpecificWeight(acceleration.MetersPerSecondSquared * density.KilogramsPerCubicMeter, UnitsNet.Units.SpecificWeightUnit.NewtonPerCubicMeter);

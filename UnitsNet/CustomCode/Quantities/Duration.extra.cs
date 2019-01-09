@@ -122,6 +122,7 @@ namespace UnitsNet
         {
             return Volume.FromCubicMeters(volumeFlow.CubicMetersPerSecond * duration.Seconds);
         }
+
 #endif
 
         /// <summary>

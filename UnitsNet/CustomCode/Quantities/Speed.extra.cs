@@ -61,6 +61,13 @@ namespace UnitsNet
             return Acceleration.FromMetersPerSecondSquared(speed.MetersPerSecond / duration.Seconds);
         }
 
+        // Added by RND
+        public static Duration operator /(Speed speed, Acceleration accel)
+        {
+            return Duration.FromSeconds(speed.MetersPerSecond / accel.MetersPerSecondSquared);
+        }
+        
+
         public static Length operator *(Speed speed, Duration duration)
         {
             return Length.FromMeters(speed.MetersPerSecond * duration.Seconds);

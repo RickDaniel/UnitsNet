@@ -60,6 +60,16 @@ namespace UnitsNet
         {
             return Angle.FromRadians(rotationalSpeed.RadiansPerSecond * duration.Seconds);
         }
+
+        public static Duration operator /(RotationalSpeed rotationalSpeed, RotationalAcceleration rotationalAcceleration)
+        {
+            return Duration.FromSeconds(rotationalSpeed.RadiansPerSecond / rotationalAcceleration.RadiansPerSecondSquared);
+        }
+
+        public static Duration operator /(Angle angle, RotationalSpeed rotationalSpeed)
+        {
+            return Duration.FromSeconds(angle.Radians / rotationalSpeed.RadiansPerSecond);
+        }
 #endif
     }
 }
