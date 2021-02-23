@@ -1,0 +1,96 @@
+﻿{
+  "Name": "Jerk",
+  "BaseUnit": "MeterPerSecondCubed",
+  "XmlDoc": "Jerk is the rate at which the acceleration of an object changes over time.",
+  "BaseDimensions": {
+    "L": 1,
+    "T": -3
+  },
+  "Units": [
+    {
+      "SingularName": "MeterPerSecondCubed",
+      "PluralName": "MetersPerSecondCubed",
+      "FromUnitToBaseFunc": "x",
+      "FromBaseToUnitFunc": "x",
+      "Prefixes": [ "Nano", "Micro", "Milli", "Centi", "Deci", "Kilo" ],
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "m/s³" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "InchPerSecondCubed",
+      "PluralName": "InchesPerSecondCubed",
+      "FromUnitToBaseFunc": "x*0.0254",
+      "FromBaseToUnitFunc": "x/0.0254", 
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "in/s³" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "FootPerSecondCubed",
+      "PluralName": "FeetPerSecondCubed",
+      "FromUnitToBaseFunc": "x*0.304800",
+      "FromBaseToUnitFunc": "x/0.304800",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "ft/s³" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "KnotPerSecondSquared",
+      "PluralName": "KnotsPerSecondSquared",
+      "FromUnitToBaseFunc": "x*0.5144444444444",
+      "FromBaseToUnitFunc": "x/0.5144444444444",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "kn/s²" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "KnotPerMinuteSquared",
+      "PluralName": "KnotsPerMinuteSquared",
+      "FromUnitToBaseFunc": "x*0.5144444444444/60",
+      "FromBaseToUnitFunc": "x/0.5144444444444*60",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "kn/min²" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "KnotPerHourSquared",
+      "PluralName": "KnotsPerHourSquared",
+      "FromUnitToBaseFunc": "x*0.5144444444444/3600",
+      "FromBaseToUnitFunc": "x/0.5144444444444*3600",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "kn/h²" ]
+        }
+      ]
+    },
+    {
+      "SingularName": "StandardGravityPerSecond",
+      "PluralName": "StandardGravityPerSecond",
+      "FromUnitToBaseFunc": "x*9.80665",
+      "FromBaseToUnitFunc": "x/9.80665",
+      "Localization": [
+        {
+          "Culture": "en-US",
+          "Abbreviations": [ "g/s" ]
+        }
+      ]
+    }
+  ]
+}
