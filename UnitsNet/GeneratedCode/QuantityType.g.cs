@@ -49,6 +49,7 @@ namespace UnitsNet
     public enum QuantityType
     {
         Undefined = 0,
+        RotationalJerk,
         Jerk,
         SpecificEntropy,
         Molarity,

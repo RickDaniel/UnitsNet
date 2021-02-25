@@ -51,6 +51,25 @@ namespace UnitsNet
         private static readonly ReadOnlyCollection<UnitLocalization> DefaultLocalizations
             = new ReadOnlyCollection<UnitLocalization>(new List<UnitLocalization>
             {
+                new UnitLocalization(typeof (RotationalJerkUnit),
+                    new[]
+                    {
+                        new CulturesForEnumValue((int) RotationalJerkUnit.DegreePerSecondCubed,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "°/s³", "deg/s³"),
+                            }),
+                        new CulturesForEnumValue((int) RotationalJerkUnit.RadianPerSecondCubed,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "rad/s³"),
+                            }),
+                        new CulturesForEnumValue((int) RotationalJerkUnit.RevolutionPerMinutePerSecondSquared,
+                            new[]
+                            {
+                                new AbbreviationsForCulture("en-US", "rpm/s²"),
+                            }),
+                    }),
                 new UnitLocalization(typeof (JerkUnit),
                     new[]
                     {
